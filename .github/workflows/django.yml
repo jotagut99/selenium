@@ -28,9 +28,6 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y firefox    
-        wget https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-linux64.tar.gz
-        tar -xzf geckodriver-v0.34.0-linux64.tar.gz
-        sudo mv geckodriver /usr/local/bin/
     - name: Run Tests
       run: |
         MOZ_HEADLESS=1 python manage.py test
