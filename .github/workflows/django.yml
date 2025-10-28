@@ -27,7 +27,7 @@ jobs:
     - name: Install Firefox for Selenium
       run: |
         sudo apt-get update
-        sudo apt-get install -y firefox-esr    
+        sudo apt-get install -y firefox    
     - name: Run Tests
       run: |
         MOZ_HEADLESS=1 python manage.py test
