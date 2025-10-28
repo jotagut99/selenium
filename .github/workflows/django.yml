@@ -24,7 +24,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-     - name: Install Firefox for Selenium
+    - name: Install Firefox for Selenium
       run: |
         sudo apt-get update
         sudo apt-get install -y firefox-esr    
